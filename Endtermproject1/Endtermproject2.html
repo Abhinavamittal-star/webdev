@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinava Mittal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0a0f1f;
+      color: #f5f5f5;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #4db5ff;
+      text-align: center;
+    }
+
+    section {padding: 70px 10%;}
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #0d152b;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #4db5ff;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #f5f5f5;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {color: #4db5ff;}
+
+    /* Hero */
+    .hero {
+      display:flex; justify-content: space-between; align-items:center;
+      flex-wrap:wrap; padding:100px 10%;
+    }
+    .hero img {
+      max-width:330px; animation: float 4s ease-in-out infinite;
+    }
+    .hero-text {max-width:600px;}
+    .hero-text h1 {
+      font-size:2.5rem; margin-bottom:15px; color:#4db5ff;
+    }
+    .hero-text h3 {
+      font-size:1.2rem; margin-bottom:20px; color:#aaa;
+    }
+    .hero-text p {margin-bottom:20px; color:#ccc;}
+    .hero-text a {
+      display:inline-block; padding:12px 25px;
+      background:#4db5ff; color:#fff; border-radius:6px;
+      text-decoration:none; font-weight:600;
+      transition:0.3s;
+    }
+    .hero-text a:hover {background:#3790d6;}
+
+    /* About */
+    .about {text-align:center;}
+    .about p {max-width:800px; margin:0 auto; color:#bbb;}
+
+    /* Skills */
+    .skills .skill {margin-bottom:20px;}
+    .skills span {display:block; margin-bottom:8px; font-size:0.9rem;}
+    .progress {
+      background:#1c2740; border-radius:8px; overflow:hidden; height:12px;
+    }
+    .progress .bar {
+      height:100%; background:#4db5ff; width:0;
+      animation: load 2s forwards;
+    }
+
+    /* Contact */
+    .contact-form {
+      max-width:650px; margin:0 auto; display:flex; flex-direction:column;
+    }
+    .contact-form input, .contact-form textarea {
+      width:100%; padding:12px; margin-bottom:15px;
+      border:1px solid #4db5ff; border-radius:6px;
+      background:#0d152b; color:#fff;
+      font-family:"Poppins",sans-serif;
+      transition:0.3s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      outline:none; box-shadow:0 0 8px #4db5ff;
+    }
+    .contact-form button {
+      background:#4db5ff; color:#fff;
+      border:none; padding:12px 25px;
+      border-radius:6px; cursor:pointer; font-weight:600;
+      transition:0.3s;
+    }
+    .contact-form button:hover {background:#3790d6;}
+
+    /* Footer */
+    footer {
+      background:#0d152b; text-align:center;
+      padding:20px; margin-top:40px; font-size:0.9rem; color:#888;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0%{transform:translateY(0);}
+      50%{transform:translateY(-10px);}
+      100%{transform:translateY(0);}
+    }
+    @keyframes load {
+      to{width:var(--value);}
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .hero {flex-direction:column; text-align:center;}
+      .hero img {margin-top:20px; max-width:250px;}
+      nav ul {flex-wrap:wrap; gap:10px;}
+      .hero-text h1 {font-size:2rem;}
+      section {padding:60px 5%;}
+    }
+    @media(max-width:480px){
+      nav {flex-direction:column; align-items:flex-start;}
+      nav .logo {margin-bottom:10px;}
+      .hero-text a {display:block; margin:10px auto; width:80%;}
+      footer {font-size:0.8rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Abhinava Mittal</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I’m Abhinava Mittal</h1>
+      <h3>Web Developer | Tech Enthusiast</h3>
+      <p>I design and build modern, responsive, and engaging web applications with clean code and futuristic design touches.</p>
+      <a href="#">Download Resume</a>
+    </div>
+    <img src="https://cdn.pixabay.com/photo/2022/02/23/19/12/robot-7032427_1280.png" alt="Portfolio Illustration">
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate web developer who loves solving problems with technology.  
+      My focus is on creating interactive and efficient applications that provide meaningful user experiences.  
+      Beyond coding, I enjoy exploring AI, futuristic design concepts, and continuously upgrading my skills.  
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills & Experience</h2>
+    <div class="skill">
+      <span>HTML</span>
+      <div class="progress"><div class="bar" style="--value:90%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>CSS</span>
+      <div class="progress"><div class="bar" style="--value:85%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="progress"><div class="bar" style="--value:75%;"></div></div>
+    </div>
+    <div class="skill">
+      <span>React</span>
+      <div class="progress"><div class="bar" style="--value:70%;"></div></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Let’s Work Together</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Abhinava Mittal | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

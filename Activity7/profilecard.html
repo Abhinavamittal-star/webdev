@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:papayawhip;
+    margin-top: 100px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 500px; 
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+
+ img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-right: 20px;
+
+}
+
+p{
+   background-color: bisque;
+   border-radius: 10px;
+   padding: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+button {
+    display: flex;
+    margin: 10px; 
+    background-color: blue;
+    color: white;
+    padding: 10px ;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
+ .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+        
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+@media (min-width: 641px) {
+ .a{
+    display: flex;
+    flex-direction: row;
+ }
+}
+@media (max-width: 640px) {
+    .card {
+        flex-direction: column;
+        width: 70vw;
+        padding: 15px;
+        text-align: center; 
+    }
+
+     img {
+        width: 120px; 
+        height: 120px;
+    }
+
+    button {
+        flex-direction: column; 
+        margin: 8px;
+        margin: auto;
+        width:200px;
+    }
+} 
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="left">
+            
+        <img src =data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUDBAYCB//EADkQAAIBAwEEBwQIBwEAAAAAAAABAgMEEQUSITFBFlFVYYGT0QYicXIUMjRSkaGxwRMjM0JiY4Il/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAEDAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A+4gh70FuQEgAAQAkARJDaSy3hd5rVL+3p5/mKTXKO/IG0CkrarWk/wCWowj8MsxrUrpPfUT/AOUBfElRR1aSaVammuuJY0LmlcLNKafWua8AMwB5Se13AegAAGQRxAAkAAAADAAGOvVjRpSqT4RXIyGhrLf0THXNAVd1dVbmXvy93lFcDAAUAAECYSlTkpU5OMlwaIAF9p959Jg1LCqR4pc+83Dn9Mm43tPD+tlHQEUAPKjiWcgSiQAAAAN4CeSGsolbkAAAA0dXw7JtcpI3jV1CG1ZVUlwW1+AHPgAqAzkBLAAAAbGn/baXzHRFDpUNq9i+UU2XxFAAAAAAAAAAAAAA1NTclZ1Njx+HM2zxWgqlKcHwlFoDmAPiCoAAAAANvS5TV5BQ4PdLdyL8p9EhmrUn1LCLgihGd+CSMcwJAAAAAAAAAAEN4I48ScEgc3d0/wCFdVYR3pMwm/rFJwuFUxumuPejQKBCZICAAfAC70imoWu3nfN5/Y3U97Rjs6bpWtOD4qO8zEUAAAgYJAjAJAAAAQ+G4RzjeSAABDA19QpKraVE/wC1bS8DnjpLn7NV+R/oc2UAAEDa02iq1ytr6sPea6zVLDRftFT5P3Iq6QAAAgkAAAAAAAAAARxQBhBtJZbwus0rjU6NPdTzUl3cPxAz3s1Ttark/wC1o5wz3V1VuZZqPEVwiuCMBUAAAN7R5qN003jajhGiSm08p4aA6gJFRbapKOI3C2l95cSyoXNGus0pp9a5oiswAAHnHvZPQAAAACG0lkr7vU4U8xoYnPr5IDeqTjCLc5KMetldX1WME428dv8AylwK2tWqVpbVSTk/0MYGWvcVa7zVm33ckYgCoEJYJAAAhPIEgAAE2mmnhrg+oDIG7b6lXp7qj/iR7+P4lpbX1G43RliX3ZHPAiuqBRWupVaOI1M1Id73ouLe4p3ENqlLPWuaAygACn1W8cpyoU5Yit0mufcVpXS9otGnOUnq1llvP9ePqR0g0XtWy8+PqWJVkCt6QaN2rZefH1HSHRe1bLzoiCyBW9IdF7VsvOiOkOi9q2XnREFkCs6Q6N2rZedEL2h0bnqtl50fUQWYxgrekOi9q2XnRHSHRe1bLzoiCyBW9IdF7VsvOiOkOi9q2XnREFkMFb0h0XtWy86I6Q6L2rZedEQWQK3pDovatl50R0g0XtWy8+PqILI90as6NRTpvEl+ZVdIdF7WsvPj6jpDou7/ANWy3/74+oHbWleNxQjUjuzxXUwcfQ9qdIpQcYavZ4bz/WiCQr4t7HWVrfatOneUI1qcKE6ihJtLaW9Zw9/D8ztn7IaDGE6H0DKhPKm61Ta4cG9reuZANHLUoezWizvbeP0CKioW8nFVZtSc6qi85lv3Hz+/pwpX9zSpx2YU604RWW9yk0t7+ABcGDwHgAUPAeAADwHgAA8B4AAPAeAADwM9ooOulUpxqRw/dba/RpgEGzXjQjJbNrTXvY+tPfu+Y8TjRcJYt4J7PFSl6kgDS4gAD//Z>
+        <h2>Abhinava Mittal</h2>
+        
+        </div>
+        <div class="right">
+        <p><i>Web Designer & JavaScript Enthusiast. Loves clean, creative layouts and good coffee !</i></p>
+        <div class="a">
+        <button>Contact</button>
+        <button>Portfolio</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

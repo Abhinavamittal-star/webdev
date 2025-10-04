@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 900px;
+            width: 500px;
+            border: 1px solid red;
+        }
+
+        .ball {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            border-radius: 50%;
+            position: absolute;
+            left: 600px;
+            bottom: 120px;
+            animation-name: bounce;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .line {
+            border: 2px solid black;
+            height: 10px;
+            width: 800px;
+            position: absolute;
+            bottom: 100px;
+            left: 200px
+        }
+
+        @keyframes bounce {
+            from {
+                bottom: 120px;
+            }
+
+            to {
+                bottom: 270px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="ball"></div>
+        <div class="line"></div>
+    </div>
+</body>
+
+</html>

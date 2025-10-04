@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 1000px;
+            width: 500px;
+            background-color: green;
+            border: 2px solid black;
+            margin: auto;
+            position: relative;
+        }
+
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 0px;
+            padding: 20px;
+            color: black;
+            background-color: green;
+        }
+
+        .o {
+            background-color: yellow;
+            position: relative;
+            left: 100px;
+        }
+
+        .w {
+            background-color: red;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .t {
+            background-color: lightblue;
+            position: fixed;
+        }
+
+        .f {
+            background-color: violet;
+            position: sticky;
+            top: 40px;
+        }
+
+        .i {
+            background-color: violet;
+            position: absolute;
+            /* top: 450px;
+            left: 200px; */
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%); /*FOR CENTERING THE ELEMENT*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box o">1</div>
+        <div class="box w">2</div>
+        <div class="box t">3</div>
+        <div class="box f">4</div>
+        <div class="box i">5</div>
+    </div>
+</body>
+
+</html>

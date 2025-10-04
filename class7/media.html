@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html{
+      font-size: 20px;
+      box-sizing: border-box;
+    }
+    .container{
+      background-color: coral;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    
+
+    
+    .box{
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      padding: 20px;
+      background-color: green;
+    }
+    .o{
+        background-color: rgb(18, 207, 220);
+    }
+
+    .w{
+        background-color: rgb(13, 123, 219);
+    }
+
+    .t{
+        background-color: rgb(218, 15, 15);
+    }
+    @media(max-width:375px){
+        .box{
+        background-color: violet;
+     }
+    }
+
+    @media(min-width:1096px){
+        .box{
+            flex-grow: 1;
+        background-color: rgb(157, 130, 238);
+     }
+     .container{
+        background-color: black;
+     }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box o">1</div>
+    <div class="box w">2</div>
+    <div class="box t">3</div>
+    <div class="box f">4</div>
+    <div class="box o">5</div>
+    <div class="box w">6</div>
+    <div class="box t">7</div>
+    <div class="box f">8</div>
+    <div class="box o">9</div>
+  </div>
+</body>
+</html>
